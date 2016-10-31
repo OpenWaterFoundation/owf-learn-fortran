@@ -22,4 +22,10 @@ fi
 
 awsProfile="$1"
 
+# First build the site so that the "site" folder contains current content.
+# - "mkdocs serve" does not do this
+
+cd ../mkdocs-project; mkdocs build --clean; cd ../build-util
+
+# Now sync the local files up to Amazon S3
 aws s3 sync ../mkdocs-project/site ${s3Folder} ${dryrun} --delete --profile "$awsProfile"

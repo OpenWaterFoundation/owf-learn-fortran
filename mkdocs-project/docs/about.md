@@ -1,3 +1,0 @@
-# About
-
-Include here about...

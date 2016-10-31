@@ -12,6 +12,8 @@ The [Open Water Foundation](http://openwaterfoundation.org) is a 501(c)3 nonprof
 on developing and supporting open source software for water resources, so that organizations can make better decisions about water.
 OWF has created this deocumentation to educate its staff and other developers that are working on Fortran software.
 
+See also other [OWF learning resources](http://learn.openwaterfoundation.org).
+
 ## How to Use this Documentation
 
 The documentation is organized in order of information and tasks necessary to setup a development environment and

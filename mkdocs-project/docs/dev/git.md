@@ -19,4 +19,4 @@ See the [OWF Learn Git documentation](http://learn.openwaterfoundation.org#owf-l
 
 ## Using Git in Development Environment
 
-Additional inforamation will be provided here about using Git with Eclipse/Photran.
+Additional inforamation will be provided here about using various tools for Fortran development, including Eclipse/Photran.

@@ -2,40 +2,48 @@
 # Use hash-comments to comment out pages have not been written
 # Reference: http://www.mkdocs.org/user-guide/configuration/
 #
-site_name: OWF Learn Fortran
+site_name: OWF Learn / Fortran
 pages:
 - Home: index.md
 - 'Development Environment':
   - 'Overview':  'dev-env/overview.md'
-#  - 'Windows':  'dev-env/os-windows.md'
-#  - 'Cygwin':  'dev-env/os-cygwin.md'
-#  - 'Linux':  'dev-env/os-linux.md'
-#  - 'Fortran Compiler (Lahey)':  'dev-env/compiler-lahey.md'
-#  - 'Fortran Compiler (gfortran)':  'dev-env/compiler-gfortran.md'
-#  - 'Eclipse':  'dev-env/eclipse.md'
-#  - 'Eclipse Photran':  'dev-env/eclipse-photran.md'
+  - 'Windows':  'dev-env/os-windows.md'
+  - 'Cygwin':  'dev-env/os-cygwin.md'
+  - 'Linux':  'dev-env/os-linux.md'
+  - 'Fortran Compiler (Lahey)':  'dev-env/compiler-lahey.md'
+  - 'Fortran Compiler (gfortran)':  'dev-env/compiler-gfortran.md'
+  - 'Eclipse':  'dev-env/eclipse.md'
+  - 'Eclipse Photran':  'dev-env/eclipse-photran.md'
 - 'Fortran Language':
   - 'Overview':  'fortran/overview.md'
-#  - 'Main Program':  'fortran/main-program.md'
-#  - 'Input':  'fortran/input.md'
-#  - 'Output':  'fortran/output.md'
-#  - 'Functions':  'fortran/functions.md'
-#  - 'Logging':  'fortran/logging.md'
-#  - 'Error Handling':  'fortran/error-handling.md'
-#  - 'Documenting Code':  'fortran/documentation.md'
-- 'Revision Control': 'dev/git.md'
-- 'Testing': 'dev/testing.md'
-#- 'Documentation': 'dev/doc.md'
-#- 'Libraries': 'dev/library.md'
-#- 'Static/Dynamic Executable': 'dev/library.md'
-#- '32/64-bit': 'dev/32-64-bit.md'
-#- 'Examples':
-#- Fortran Tools for Water Resources:  water-resources.md
+  - 'Main Program':  'fortran/main-program.md'
+  - 'Modules':  'fortran/modules.md'
+  - 'Functions':  'fortran/functions.md'
+  - 'Subroutines':  'fortran/subroutines.md'
+  - 'Input':  'fortran/input.md'
+  - 'Output':  'fortran/output.md'
+  - 'Logging':  'fortran/logging.md'
+  - 'Error Handling':  'fortran/error-handling.md'
+  - 'Documenting Code':  'fortran/doc-code.md'
+- 'Developer Tasks':
+   - 'Revision Control': 'dev/git.md'
+   - 'Testing': 'dev/testing.md'
+   - 'Documentation': 'dev/doc.md'
+   - 'Compile and Run': 'dev/compile-run.md'
+   - 'Build and Deploy': 'dev/build-deploy.md'
+- 'Other Topics':
+   - 'Libraries': 'dev/libraries.md'
+   - 'Static & Dynamic Executable': 'dev/static-dynamic-exe.md'
+   - '32/64-bit': 'dev/32-64-bit-exe.md'
+- 'Examples':
+   - 'Overview': 'examples/overview.md'
+- 'Fortran Tools for Water Resources':
+   - 'Overview': 'water-resources/overview.md'
 theme: readthedocs
 repo_url:  https://github.com/OpenWaterFoundation/owf-learn-fortran
 site_description:  Open Water Foundation Learn Fortran training documentation
 site_author:  Open Water Foundation
-site_favicon:  docs/images/OWF-Logo-Favicon-32x32.png
+site_favicon:  OWF-Logo-Favicon-32x32.png
 copyright:  Copyright Open Water Foundation
 #extra_css:
 #- css/extra.css
