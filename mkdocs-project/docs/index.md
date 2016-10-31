@@ -10,7 +10,7 @@ in order to help train a developer community to maintain and enhance water resou
 
 The [Open Water Foundation](http://openwaterfoundation.org) is a 501(c)3 nonprofit social enterprise that focuses
 on developing and supporting open source software for water resources, so that organizations can make better decisions about water.
-OWF has created this deocumentation to educate its staff and other developers that are working on Fortran software.
+OWF has created this documentation to educate its staff and other developers that are working on Fortran software.
 
 See also other [OWF learning resources](http://learn.openwaterfoundation.org).
 
@@ -21,3 +21,16 @@ develop Fortran programs.
 
 This documentation is not intended to be a full references for the Fortran language but focuses on important topics that
 will help a Fortran programmer understand important technical concepts and be successful with software tools.
+
+## License
+
+The OWF Learn Fortran website content and examples are licenses under the
+[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0).
+
+## Source Repository on GitHub
+
+The source files for this documentation are maintained in a GitHub repository:  [owf-learn-fortran](https://github.com/OpenWaterFoundation/owf-learn-fortran).
+
+## MkDocs
+
+This documentation is prepared using MkDocs.  For full MkDocs documentation visit [mkdocs.org](http://mkdocs.org/).
