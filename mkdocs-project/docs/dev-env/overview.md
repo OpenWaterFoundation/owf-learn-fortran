@@ -60,9 +60,9 @@ Additional options may be documented in the future.
 
 Additional details of the development environment flow from other tool choices, including use of the `make` program.
 
-# Revision Control
+# Version Control
 
-This documentation focuses on using Git for revision control due to its popularity and OWF experience on various projects.
+This documentation focuses on using Git for version control due to its popularity and OWF experience on various projects.
 Specific Git workflow protocols are not discussed but should be determined for each specific Fortran software project.
 
 # Code Documentation

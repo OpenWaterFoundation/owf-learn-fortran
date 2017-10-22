@@ -1,10 +1,10 @@
-# Using Fortran Libraries
+# Using Fortran Libraries #
 
 A Fortran software library is a collection of code that is managed in one file that can be linked to other code.
 A library is suitable when code is reused in multiple programs.
 If a library is not used, then the original code must be copied into each program, which can result in maintenance issues.
 
-## Fortran Library Concepts
+## Fortran Library Concepts ##
 
 Fortran libraries are used at compiler link time, which is the step where the compiler joins together different code modules to create the executable program.
 Actually, a separate program may be used for linking (the "linker") but in many cases the linker is called by the compiler as the final step.
@@ -14,7 +14,7 @@ Libraries are typically created for specific purposes, such as a math library, m
 to provide the most flexibility and reusability as program  building blocks.
 
 The compiler/linker will search each library based on a list of explicitly-specified library files or by searching in folders in the link path,
-such as standard libary locations on the computer.  **Need to describe more where these folders are and environment variables used for the link path.**
+such as standard library locations on the computer.  **Need to describe more where these folders are and environment variables used for the link path.**
 
 The compiler/linker has a list of module names that were used in the software, and it looks for those module names in libraries.
 Found modules are included in the created executable (if a static executable) or are marked as the dependency being found for dynamic libraries
@@ -27,7 +27,7 @@ characters such as underscores to module names to ensure uniqueness.
 Module names may also have multiple versions for unicode characters or other variations in input and output.
 **Need some examples of link errors**
 
-## Static and Dynamic Libraries
+## Static and Dynamic Libraries ##
 
 Static libraries are intended to be linked with other code to create static executables.  In this case the code provided by the libraries
 is added to other code to create the static executable and the library is no longer used in its original form.
@@ -72,11 +72,11 @@ cygguile-srfi-srfi-60-v-2-2.dll*     girepository-1.0/   libbinmode.a           
 
 ```
 
-## 32-bit and 64-bit Libraries
+## 32-bit and 64-bit Libraries ##
 
-Most operating systems intended to run Fortran programs are availble as 32-bit and 64-bit, with 64-bit becoming the norm.
+Most operating systems intended to run Fortran programs are available as 32-bit and 64-bit, with 64-bit becoming the norm.
 64-bit operating systems are able to address more memory locations and consequently can run programs that require more memory.
-This may be imporant for complex models. 
+This may be important for complex models. 
 
 64-bit operating systems are able to run 32-bit software created for the same operating system, generally by keeping 32-bit and 64-bit versions
 of software and libraries.  For example, on Windows 64-bit computers the `C:\Programs Files` folder contains 64-bit software and the
@@ -88,7 +88,7 @@ but 32-bit operating systems cannot run software compiled for 64-bit operating s
 
 **Need to add discussion here about how to compile and link 32-bit and 64-bit Fortran libraries**
 
-## Linking in Libraries in Other Languages
+## Linking in Libraries in Other Languages ##
 
 At a basic level, simple Fortran functions and subroutines are the same as those in other languages.
 This allows Fortran to call libraries written in other languages, typically C.
@@ -99,13 +99,13 @@ A mixed-language approach is appropriate but must utilize sufficient testing to 
 
 **Need to insert an example**
 
-## Mechanics of Maintaining  a Library with Revision Control
+## Mechanics of Maintaining  a Library with Version Control ##
 
 Because a library contains code that can be called by other programs and libraries,
 it is generally necessary to maintain the code for the library in a separate repository.
 This can be accomplished easily in any repository software, including Git.
 In this case, the repository will contain build processes to compile, test, and create the distributable library,
-as well as creating HTML API documenation that can be used when writing other software.
+as well as creating HTML API documentation that can be used when writing other software.
 Testing for the library may include unit tests for specific routines,
 and perhaps one or more main programs that call library routines to test higher-level functionality.
 
@@ -125,10 +125,10 @@ An important consideration is how to version libraries so that are backward comp
 and also provide new functionality, which is why many libraries include version numbers.
 Libraries must also be kept up to date to retain their value.
 
-## Creating a Library
+## Creating a Library ##
 
 ** Need to insert example **
 
-## Using a Library
+## Using a Library ##
 
 ** Need to insert example **
