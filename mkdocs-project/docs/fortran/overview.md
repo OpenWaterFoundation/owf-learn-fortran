@@ -1,11 +1,11 @@
-# Fortran Language Overview
+# Fortran Language Overview #
 
 The Fortran language is a generally considered a procedural language,
-meaning that logic is executed as a sequency of function and subroutine calls that process data.
+meaning that logic is executed as a sequence of function and subroutine calls that process data.
 Although later versions of the language (90, 95, etc.) and compiler extensions introduced concepts of objects (see derived data types/structures),
 many legacy Fortran programs continue to utilize basic data types such as arrays of numbers.
 
-## Fortran 77 and 90 Differences
+## Fortran 77 and 90 Differences ##
 
 Fortran code has traditionally been a bit cryptic due to early limitations on the length of variable names (6 characters in Fortran 77) and implicit typing.
 For example, many old programs have variables with very short names that follow implicit typing (`i1` for integer, `a` for string, `x` for floating-point, etc.)
@@ -13,12 +13,12 @@ For example, many old programs have variables with very short names that follow 
 Differences between Fortran versions are discussed in the following resources:
 
 * [Fortran 90 vs Fortran 77](http://www.owlnet.rice.edu/~ceng303/manuals/fortran/FOR1_5.html)
-* [Fortran: what is it and what's the diffference between F90 and F77](http://www.astro.ex.ac.uk/people/saunders/computing_tutorials/fortran.pdf)
+* [Fortran: what is it and what's the difference between F90 and F77](http://www.astro.ex.ac.uk/people/saunders/computing_tutorials/fortran.pdf)
 
 For this documentation, the term "Fortran 77" means explicit Fortran 77 language features and the term "Fortran 77-style" means Fortran 77 style,
 but perhaps within a Fortran 90 program.  The goal over time is to migrate away from Fortran 77-style coding to Fortran 90 coding.
 
-## Langage Reference Resources
+## Language Reference Resources ##
 
 The following are useful Fortran language references:
 
@@ -26,7 +26,7 @@ The following are useful Fortran language references:
 * [Fortan 90 Tutorial (Stanford University)](https://web.stanford.edu/class/me200c/tutorial_90/)
 * [CHBE 303 Fotran 90 Manual](http://www.owlnet.rice.edu/~ceng303/manuals/fortran/)
 
-## Case-insensitive and Implicit Variable Typing]
+## Case-insensitive and Implicit Variable Typing] ##
 
 Fortran is case-insensitive other than string literals.  "i" and "I" are considered the same variable.
 Code can be written in all lowercase, all uppercase, or mixed, although older code is often all uppercase.
@@ -44,7 +44,7 @@ This will cause the compiler to generate errors if variables are used without de
 As to where to include the above statement, see the following:  ["Where to put `implicit none` in Fortran](http://stackoverflow.com/questions/24337413/where-to-put-implicit-none-in-fortran).
 To be safe, include the statement at the top of each `PROGRAM`, module, and stand-alone subroutine and function.
 
-## Fortran Passes Variables by Reference and Value
+## Fortran Passes Variables by Reference and Value ##
 
 * Fortran passes primitive variables by value (meaning that calling routines do not see changes in the value).
 However, it passes arrays by reference (meaning that calling routines do see changes in the values in the arrays).
@@ -52,7 +52,7 @@ However, it passes arrays by reference (meaning that calling routines do see cha
 Fortran 90 provides the `intent(in)`, `intent(out)`, `intent(inout)` syntax to provide a hint to the compiler as to whether routine parameters
 are input, output, or both.
 
-## Array Concepts
+## Array Concepts ##
 
 Arrays in Fortran can be declared in any module and arrays can be passed to called modules.
 Legacy code may declare arrays with number sizes in each subroutine, for example:
@@ -84,12 +84,12 @@ END
 
 This indicates that the subroutine is receiving an array but it does not know the size.
 
-## Sharing Global Data - Common Blocks vs. Modules
+## Sharing Global Data - Common Blocks vs. Modules ##
 
 Need to discuss here transitioning from Fortran 77 common blocks to Fortran 90 modules and `use` syntax.
 Useful resources:
 
-* [Modules (Emory Univerisity)](http://www.mathcs.emory.edu/~cheung/Courses/561/Syllabus/6-Fortran/modules.html)
+* [Modules (Emory University)](http://www.mathcs.emory.edu/~cheung/Courses/561/Syllabus/6-Fortran/modules.html)
 
 Common block background:
 
@@ -104,11 +104,11 @@ Module background:
 * includes a specifications section where data are declared and a `contains` section where subroutines and functions can be declared.
 * Question:  do modules only contain global data or are object instances supported?
 
-## Object-oriented Fortran
+## Object-oriented Fortran ##
 
 It is possible to create object-oriented Fortran using Fortran 90 features.
 The behavior ("routines") are provided using a `module` and instance data are maintained in a structure.
-The mudule routines take as a parameter an instance of the structure.
+The module routines take as a parameter an instance of the structure.
 Consequently, the object data are maintained separate from the behavior.
 See the following resources:
 
