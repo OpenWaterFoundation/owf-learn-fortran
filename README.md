@@ -1,10 +1,10 @@
 # owf-learn-fortran #
 
-This repository contains the [Open Water Foundation (OWF)](http://openwaterfoundation.org/) Fortran training materials,
+This repository contains the [Open Water Foundation (OWF)](https://openwaterfoundation.org/) Fortran training materials,
 which provides guidance for using the Fortran programming language.
 The documentation is written for software developers using the Fortran programming language.
 
-See the deployed [OWF / Learn Fortran](http://learn.openwaterfoundation.org/owf-learn-fortran/) documentation.
+See the deployed [OWF / Learn Fortran](https://learn.openwaterfoundation.org/owf-learn-fortran/) documentation.
 
 **This documentation is a work in progress.**
 
@@ -28,7 +28,7 @@ mkdocs-project/       (Typical MkDocs project for this documentation)
 ## Development Environment ##
 
 The development environment for contributing to this project requires installation of Python, MkDocs, and Material MkDocs theme.
-Python 2 has been used for development.  See the [OWF / Learn MkDocs](http://learn.openwaterfoundation.org/owf-learn-mkdocs/)
+Python 2 has been used for development.  See the [OWF / Learn MkDocs](https://learn.openwaterfoundation.org/owf-learn-mkdocs/)
 documentation for more information about MkDocs.
 
 ## Editing and Viewing Content ##
@@ -53,7 +53,7 @@ Contribute to the documentation as follows:
 
 ## Maintainers ##
 
-This repository is maintained by the [Open Water Foundation](http://openwaterfoundation.org/).
+This repository is maintained by the [Open Water Foundation](https://openwaterfoundation.org/).
 
 ## Contributors ##
 
